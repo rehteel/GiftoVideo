@@ -1,0 +1,68 @@
+Create Gif using python
+
+-------------------------------
+THIS IS CODE
+------------------------------
+~~~~~~~~~~~~
+THIS IS EXPLANATION
+~~~~~~~~~~~~
+
+~~~~~~
+Have the .mp4 ready to convert to a GIF
+~~~~~~~~
+
+
+
+
+INSTALL THIS PACKAGE FIRST in terminal
+
+pip install moviepy 
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+ MoviePy is a versatile Python library for video editing
+
+
+pip: The package installer for Python. It is used to install and manage software packages written in Python.
+
+install: A pip command to install a package.
+
+moviepy: The name of the package you want to install.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+--------------------------------
+from moviepy.editor import VideoFileClip
+------------------------------
+~~~~~~~~~~~~~~~~
+
+from moviepy.editor: This part specifies that we are importing from the moviepy.editor module. MoviePy is a library for video editing, and editor is one of its submodules that contains functions and classes for editing videos.
+
+
+import VideoFileClip: This part means we are importing the VideoFileClip class from the moviepy.editor module. The VideoFileClip class is used to work with video files.
+
+~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+----------------------------------------
+clip = VideoFileClip("bunny.mp4")
+--------------------------------------
+~~~~~~~~~~~~~~~~~~
+clip =: This part creates a variable named clip that will store our video file object.
+
+VideoFileClip("bunny.mp4"): This part calls the VideoFileClip class with the argument "bunny.mp4", which is the name of the video file we want to work with. This loads the video file into the clip variable. Now, clip represents the video file "bunny.mp4".
+~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+-----------------------------------------------
+clip.write_gif("bunny1.gif")
+-----------------------------------------------
+~~~~~~~~~~~~~~~~~~~
+clip.write_gif: This part calls the write_gif method on the clip object. The write_gif method is used to convert the video into a GIF format.
+("bunny1.gif"): This part specifies the name of the output GIF file. The resulting GIF will be saved with the name "bunny1.gif".
